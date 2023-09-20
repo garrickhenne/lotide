@@ -20,6 +20,7 @@ const assertArraysEqual = function(arr1, arr2) {
     console.log(`✅✅✅ Assertion Passed: Array 1 is equal to Array 2!`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: Array 1 NOT EQUAL to Array 2`);
+    console.log(`Given: ${arr1} \n Expected: ${arr2}`);
   }
 };
 
