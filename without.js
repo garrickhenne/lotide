@@ -38,6 +38,8 @@ const without = function(originalArray, removalValues) {
   return filteredArray;
 };
 
+module.exports = without;
+
 // TESTS
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "2", "3"], [1, 2, "3"]); // => ["1", "2"]

@@ -48,6 +48,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 // TESTS
 const actual1 = letterPositions('hello');
 const expected1 = {

@@ -29,6 +29,8 @@ const countLetter = (sentence) => {
   return letterCount;
 };
 
+module.exports = countLetter;
+
 // TESTS
 const firstExpected = {
   l: 1,

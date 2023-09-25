@@ -20,6 +20,8 @@ const findKeyByValue = (searchObject, value) => {
   return undefined;
 };
 
+module.exports = findKeyByValue;
+
 // TEST
 const expected1 = {
   sciFi: 'The Expanse',

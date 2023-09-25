@@ -42,6 +42,8 @@ const assertObjectsEqual = (actual, expected) => {
   }
 };
 
+module.exports = assertObjectsEqual;
+
 assertObjectsEqual({}, {});
 assertObjectsEqual({ hello: 'hello' }, { hello: 'hello' });
 assertObjectsEqual({ hello: 'hello' }, { hello: 'hell' }); // expect false message.
