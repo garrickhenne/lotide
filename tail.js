@@ -1,6 +1,6 @@
 const tail = function(arr) {
   if (!Array.isArray(arr)) {
-    console.log('Arguement should be an array.');
+    console.log('Argument should be an array.');
     return undefined;
   }
 

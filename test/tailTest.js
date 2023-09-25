@@ -1,23 +1,20 @@
-const assertEqual = require('../assertEqual');
+const assert = require('chai').assert;
 const tail = require('../tail');
 
-// Test Case: Check the original array.
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-const tailWords = tail(words);
-assertEqual(tailWords[0], 'Lighthouse');
-assertEqual(tailWords[1], 'Labs');
+describe('#tail', () => {
+  it('returns remaining items after first of ["Yo Yo", "Lighthouse", "Labs"]', () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ['Lighthouse', 'Labs']);
+  });
 
-// Other scenarios:
-// An array with only one element should yield an empty array for its tail
-const test2 = tail(['one']);
-assertEqual(Array.isArray(test2), true);
-assertEqual(test2[0], undefined);
-// An empty array should yield an empty array for its tail
-const test3 = tail([]);
-assertEqual(Array.isArray(test3), true);
-assertEqual(test3[0], undefined);
+  it('returns an empty array when given an array of one item', () => {
+    assert.isEmpty(tail(['one']));
+  });
 
-// Not an array.
-assertEqual(tail(1), undefined);
+  it('returns an empty array when given an empty array', () => {
+    assert.isEmpty(tail([]));
+  });
+
+  it('returns undefined when given a non-array', () => {
+    assert.isUndefined(tail(1));
+  });
+});
