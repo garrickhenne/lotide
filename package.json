@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@garrickhenne/lotide",
   "version": "1.0.0",
   "description": "",
   "main": "assertArraysEqual.js",
@@ -9,7 +9,10 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": {
+    "name": "Garrick Henne",
+    "email": "garrickhenne@outlook.com"
+  },
   "license": "ISC",
   "repository": {
     "type": "git",
