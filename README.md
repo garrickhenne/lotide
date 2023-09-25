@@ -42,3 +42,4 @@ The following functions are currently implemented:
 * `map(array, callback)`: Given an array, and callback, performs map function.
 * `takeUntil(array, callback)`: Given an array and callback, iterates through array and returns all elements iterated through until callback returns true once. 
 * `without(array1, array2)`: Returns an array with all elements in second array that were contained in first array.
+* `flatten(array)`: Returns an array with all sub-arrays presented into one-dimensional array.
